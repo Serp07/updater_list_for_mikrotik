@@ -48,7 +48,7 @@ add action=drop chain=input comment="Drop new connections from blacklisted IP's 
 ### [For RouterOs v7.xx  ](updater_list_script_for_v7.xx.rsc)
 
 ```
-    /system scheduler
+/system scheduler
 add comment="Apply combined List" interval=1d name=Update_combined on-event=\
     Updater_List policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
@@ -66,7 +66,7 @@ add dont-require-permissions=no name=Updater_List owner=admin policy=\
     \n\
     \n#/file/remove combined.rsc"
 
-    /ip firewall filter
+/ip firewall filter
 add action=drop chain=input comment="Drop new connections from blacklisted IP's to this router" connection-state=new \
     in-interface=ether1 in-interface-list=WAN src-address-list=blacklist
 
