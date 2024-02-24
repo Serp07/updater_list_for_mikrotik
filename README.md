@@ -76,3 +76,7 @@ In order to use any of the following lists you will want to add a rule to your i
 
 add chain=input action=drop comment="Drop new connections from blacklisted IP's to this router" \
     connection-state=new src-address-list=blacklist in-interface=ether1-Internet
+
+# Result
+
+![](image/drop_connections.PNG)
