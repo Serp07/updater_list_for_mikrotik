@@ -40,7 +40,7 @@ add dont-require-permissions=no name=Updater_List owner=admin policy=\
 add action=drop chain=input comment="Drop new connections from blacklisted IP's to this router" connection-state=new \
     in-interface=ether1 in-interface-list=WAN src-address-list=blacklist
 
-     ```
+```
 The following will not block anything, it only adds IP’s to your address list. You will still have to create a firewall rule which will match src-address-list=blacklist and drop the traffic in your input and/or forward chains.
 In order to use any of the following lists you will want to add a rule to your input or forward chains like the following:
 
