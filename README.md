@@ -1,6 +1,6 @@
 <a href="#"><img alt="updater_list_for_mikrotik last commit (main)" src="https://img.shields.io/github/last-commit/Serp07/updater_list_for_mikrotik/main?color=green&style=for-the-badge"></a>
 <a href="#"><img alt="updater_list_for_mikrotik License" src="https://img.shields.io/github/license/Serp07/updater_list_for_mikrotik?color=orange&style=for-the-badge"></a>
-[![required RouterOS version](https://img.shields.io/badge/RouterOS-7.12-yellow?style=for-the-badge)](https://mikrotik.com/download/changelogs/)
+[![required RouterOS version](https://img.shields.io/badge/RouterOS-7.12-yellow?style=flat)](https://mikrotik.com/download/changelogs/)
 # MikroTik Automatically Updated Address List
 ### A Problem
 When you offer public access to a service it can be rather difficult to separate the bad connections from the good.
