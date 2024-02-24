@@ -15,3 +15,9 @@ add dont-require-permissions=no name=Updater_List owner=admin policy=\
     \n:log info \"Removed old autoaddresslist records and imported new list\";\r\
     \n\
     \n#/file/remove combined.rsc"
+
+    /ip firewall filter
+add action=drop chain=input comment="Drop new connections from blacklisted IP's to this router" connection-state=new \
+    in-interface=ether1 in-interface-list=WAN src-address-list=blacklist
+
+
