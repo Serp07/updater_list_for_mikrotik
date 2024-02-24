@@ -15,8 +15,10 @@ add list=blacklist address=1.10.16.0/20 comment=SpamHaus
 add list=blacklist address=1.116.0.0/14 comment=SpamHaus   
 ...
 ### Implementation
-The implementation is simple... paste the following code into the terminal of any MikroTik and your router will grab the newest copy of my script file and run it regular basis.
-![](updater_list_script_for_v7.xx.rsc)
+The implementation is simple... paste the following code into the terminal of any MikroTik and your router will grabthe newest copy of my script file and run it regular basis.    
+
+[Contribution guidelines for this project](updater_list_script_for_v7.xx.rsc)
+
 The following will not block anything, it only adds IP’s to your address list. You will still have to create a firewall rule which will match src-address-list=blacklist and drop the traffic in your input and/or forward chains.
 In order to use any of the following lists you will want to add a rule to your input or forward chains like the following:
 
