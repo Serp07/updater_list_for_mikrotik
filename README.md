@@ -1,10 +1,8 @@
-### updater_list_for_mikrotik
-
 # MikroTik Automatically Updated Address List
-A Problem
+### A Problem
 When you offer public access to a service it can be rather difficult to separate the bad connections from the good.
 
-A Solution
+### A Solution
 MikroTik to the rescue with address lists… simply put the bad addresses in a list and block anything in the list. Sounds like fun right… or maybe not so much? Of course you can (and should) manually create rules to detect abuse and dynamically create the lists… However there is more that you can do, you can subscribe to lists that are maintained by others like Spamhaus, dshield,
 
 ### Example of a parsed list
