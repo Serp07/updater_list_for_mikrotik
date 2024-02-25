@@ -3,7 +3,8 @@ add comment="Apply combined List" interval=1d name=Update_combined on-event=Upda
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon start-date=feb/24/2024 start-time=20:08:41
 /system script
 add dont-require-permissions=no name=Updater_List owner=admin policy=\
-    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source="/tool fetch url=\"https://raw.githubusercontent.co\m/Serp07/updater_list_for_mikrotik/main/combined.rsc\" mode=https dst-path=combined.rsc;\
+    ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source="/tool fetch url=\"https://raw.githubusercontent.co\
+    m/Serp07/updater_list_for_mikrotik/main/combined.rsc\" mode=https dst-path=combined.rsc;\
     \n\r\
     \n\r\
     \n:log info \"Downloaded autoaddresslist from github/Serp07 \";\r\
