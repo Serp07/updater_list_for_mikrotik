@@ -22,14 +22,6 @@ The implementation is simple... paste the following code into the terminal of an
 ### [For RouterOs v6.xx  ](updater_list_script_for_v6.xx.rsc) 
 
 ```
-/tool fetch url=https://raw.githubusercontent.com/Serp07/updater_list_for_mikrotik/main/updater_list_script_for_v6.xx.rsc;
-/import file-name=updater_list_script_for_v6.xx.rsc;
-/file remove numbers=updater_list_script_for_v6.xx.rsc;
-```
-
-### Or
-
-```
 /system scheduler
 add comment="Apply combined List" interval=1d name=Update_combined on-event=Updater_List policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon start-date=feb/24/2024 start-time=20:08:41
