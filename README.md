@@ -19,7 +19,15 @@ add list=blacklist address=1.116.0.0/14 comment=SpamHaus
 ### Implementation
 The implementation is simple... paste the following code into the terminal of any MikroTik and your router will grabthe newest copy of my script file and run it regular basis.    
 
-### [For RouterOs v6.xx  ](updater_list_script_for_v6.xx.rsc)
+### [For RouterOs v6.xx  ](updater_list_script_for_v6.xx.rsc) 
+
+```
+/tool fetch url=https://raw.githubusercontent.com/Serp07/updater_list_for_mikrotik/main/updater_list_script_for_v6.xx.rsc;
+/import file-name=updater_list_script_for_v6.xx.rsc;
+/file remove numbers=updater_list_script_for_v6.xx.rsc;
+```
+
+### Or
 
 ```
 /system scheduler
