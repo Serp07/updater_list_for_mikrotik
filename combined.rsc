@@ -1919,3 +1919,4 @@ add list=blacklist address=105.96.26.26 comment=Bruteforce_Blocker
 add list=blacklist address=61.1.106.25 comment=Bruteforce_Blocker
 add list=blacklist address=117.72.108.90 comment=Bruteforce_Blocker
 add list=blacklist address=193.233.165.245 comment=Bruteforce_Blocker
+add list=blacklist address=233.233.233.233 comment=test
